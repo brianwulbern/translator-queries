@@ -1,0 +1,30 @@
+#!/bin/bash
+# tq - answer translators' questions on a Crowdin project, from the source code.
+#
+#   tq                     review each reply and choose send / skip
+#   tq preview --only mat  dry run, changes nothing
+#   tq post --only mat     batch post, asks [y/N] first
+#   tq pull                refresh the queue only
+#
+# Install by symlinking this onto your PATH:
+#
+#   ln -s "$PWD/bin/tq" ~/.local/bin/tq
+#
+# The Crowdin token is read from CROWDIN_PERSONAL_TOKEN. When that is unset and
+# TQ_CREDENTIALS_FILE points at a shell file that exports it, that file is
+# sourced. The token is never printed.
+set -u
+
+SELF="$(readlink -f "${BASH_SOURCE[0]}")"
+ROOT="$(cd "$(dirname "${SELF}")/.." && pwd)"
+CREDS="${TQ_CREDENTIALS_FILE:-}"
+
+if [ -z "${CROWDIN_PERSONAL_TOKEN:-}" ] && [ -n "${CREDS}" ] && [ -r "${CREDS}" ]; then
+	. "${CREDS}" >/dev/null 2>&1
+fi
+
+# No token check here on purpose. tq.py reports a missing, empty or unusable
+# token with the setup steps, and `tq doctor` exists precisely for the case
+# where there is no token yet, so this launcher must not block it.
+
+exec python3 "${ROOT}/lib/tq.py" "$@"

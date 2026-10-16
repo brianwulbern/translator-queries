@@ -1,0 +1,20 @@
+{
+  "project": {"id": 1, "name": "Acme Studio"},
+  "me": "demo.reviewer",
+  "strings": [
+    {"id": 101, "identifier": "clean", "context": "clean", "text": "Clean", "fileId": 7},
+    {"id": 102, "identifier": "x-files-deleted", "context": "x-files-deleted", "text": "{0} files deleted.", "fileId": 7},
+    {"id": 103, "identifier": "x-sent-you-x-for-x", "context": "x-sent-you-x-for-x", "text": "{0} sent you {1} for {2}.", "fileId": 7},
+    {"id": 104, "identifier": "go-to-page-x", "context": "go-to-page-x", "text": "Go to Page {0}", "fileId": 7},
+    {"id": 105, "identifier": "export-size", "context": "export-size", "text": "Export Size", "fileId": 7},
+    {"id": 106, "identifier": "legacy-sync-label", "context": "legacy-sync-label", "text": "Sync/Legacy Mode", "fileId": 7}
+  ],
+  "comments": [
+    {"id": 501, "stringId": 101, "type": "issue", "issueType": "source_mistake", "issueStatus": "unresolved", "languageId": "nl", "user": "translator.anna", "createdAt": "2026-10-05T09:00:00+00:00", "text": "@demo.reviewer Is this a button? What does it do?"},
+    {"id": 502, "stringId": 102, "type": "issue", "issueType": "general_question", "issueStatus": "unresolved", "languageId": "de", "user": "translator.ben", "createdAt": "2026-10-06T09:00:00+00:00", "text": "What replaces {0}? A number or a file name?"},
+    {"id": 503, "stringId": 103, "type": "issue", "issueType": "general_question", "issueStatus": "unresolved", "languageId": "ja", "user": "translator.chie", "createdAt": "2026-10-06T10:00:00+00:00", "text": "What will replace {1} and {2}?"},
+    {"id": 504, "stringId": 104, "type": "issue", "issueType": "general_question", "issueStatus": "unresolved", "languageId": "fr", "user": "translator.anna", "createdAt": "2026-10-07T09:00:00+00:00", "text": "What is the placeholder?"},
+    {"id": 505, "stringId": 105, "type": "issue", "issueType": "general_question", "issueStatus": "unresolved", "languageId": "es", "user": "translator.dario", "createdAt": "2026-10-08T09:00:00+00:00", "text": "What sort of content is this about? I cannot find it in the product."},
+    {"id": 506, "stringId": 106, "type": "issue", "issueType": "general_question", "issueStatus": "unresolved", "languageId": "it", "user": "translator.ben", "createdAt": "2026-10-09T09:00:00+00:00", "text": "What is the connection between Sync and Legacy Mode here?"}
+  ]
+}

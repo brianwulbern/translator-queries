@@ -1,0 +1,11 @@
+{
+  "me": {"accountId": "demo-account"},
+  "issues": {
+    "SHOP-180": {"summary": "Shapes: add a style option", "issuetype": "Technical Task", "parent": "SHOP-170", "components": []},
+    "SHOP-170": {"summary": "Hand-drawn annotation styles", "issuetype": "Story", "components": [{"id": "11", "name": "Canvas"}]},
+    "SHOP-195": {"summary": "Inbox: show who sent each task", "issuetype": "Story", "components": [{"id": "12", "name": "Workflow"}]},
+    "SHOP-214": {"summary": "Language keys for the export status panel", "issuetype": "Technical Task", "parent": "SHOP-210", "components": []},
+    "SHOP-210": {"summary": "Export status panel", "issuetype": "Story", "components": [{"id": "13", "name": "Data Export"}]},
+    "SHOP-100": {"summary": "Initial product", "issuetype": "Epic", "components": [{"id": "14", "name": "Platform"}]}
+  }
+}

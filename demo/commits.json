@@ -1,0 +1,31 @@
+[
+  {
+    "date": "2024-03-01T10:00:00",
+    "subject": "SHOP-100 Initial product",
+    "files": [
+      ".github/CODEOWNERS",
+      "web/src/build/tasks.js",
+      "web/src/common/Pager.tsx",
+      "web/src/files/DeleteDialog.tsx"
+    ],
+    "keys": ["go-to-page-x", "legacy-sync-label", "x-files-deleted"]
+  },
+  {
+    "daysAgo": 30,
+    "subject": "SHOP-180 Shapes: add a style option for annotations",
+    "files": ["web/src/shapes/StyleMenu.tsx"],
+    "keys": ["clean", "hand-drawn", "style"]
+  },
+  {
+    "daysAgo": 20,
+    "subject": "SHOP-195 Show who sent each task in the inbox",
+    "files": ["web/src/inbox/TaskRow.tsx"],
+    "keys": ["x-sent-you-x-for-x"]
+  },
+  {
+    "daysAgo": 5,
+    "subject": "SHOP-214 Add language keys for the export status panel",
+    "files": [],
+    "keys": ["export-size", "export-status", "rows-exported", "the-export-stopped-at-the-row-limit"]
+  }
+]

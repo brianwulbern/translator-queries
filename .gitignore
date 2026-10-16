@@ -1,0 +1,10 @@
+config.json
+team.json
+lang-history.tsv
+state.json
+links.json
+usage.json
+answers/
+demo-world.json
+__pycache__/
+*.pyc

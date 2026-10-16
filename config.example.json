@@ -1,0 +1,15 @@
+{
+	"sourceRepo": "~/src/my-product",
+	"languageFile": "i18n/Language.properties",
+	"crowdinProjectId": 123456,
+	"crowdinProjectSlug": "my-product",
+	"canonicalRemote": "[/:]my-org/my-product(\\.git)?$",
+	"commitUrlBase": "https://github.com/my-org/my-product/commit/",
+	"jiraHost": "https://my-org.atlassian.net",
+	"jiraProject": "PROD",
+	"jiraTaskTypeId": "10002",
+	"extraRepo": "",
+	"extraRef": "",
+	"team": ["your.crowdin.username", "a.teammate"],
+	"skipMention": ["the.localization.manager"]
+}
